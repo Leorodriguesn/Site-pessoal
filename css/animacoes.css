@@ -87,8 +87,6 @@
 @keyframes botaoLinkedin {
     0% {
         opacity: 0;
-        padding: 1.3rem 3.5rem;
-        margin: 2rem 0;
     }
     10% {
         opacity: 1;
@@ -125,6 +123,8 @@
 
 .link-linkedin {
     opacity: 0;
+    padding: 1.3rem 3.5rem;
+    margin: 2rem 0;
     animation: botaoLinkedin 10s ease-in-out forwards;
     animation-play-state: paused;
 }
