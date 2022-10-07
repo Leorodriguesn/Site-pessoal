@@ -3,6 +3,7 @@ $(document).ready(function (){
         $('html, body').animate({
             scrollTop: ($("#inicio__ancora").offset().top - 100)
         }, 1500);
+        menuMobile.classList.toggle('menu-mobile__ativo');
     });
 });
 
@@ -11,6 +12,7 @@ $(document).ready(function (){
         $('html, body').animate({
             scrollTop: ($("#projetos__ancora").offset().top - 100)
         }, 1500);
+        menuMobile.classList.toggle('menu-mobile__ativo');
     });
 });
 
@@ -19,5 +21,6 @@ $(document).ready(function (){
         $('html, body').animate({
             scrollTop: ($("#habilidades__ancora").offset().top)
         }, 1500);
+        menuMobile.classList.toggle('menu-mobile__ativo');
     });
 });
