@@ -1,0 +1,230 @@
+/* 768px - 1024px */
+
+@media screen and (min-width:768px) {
+
+    /* CABEÇALHO 768px - 1024px */
+
+    .cabecalho {
+        display: flex;
+        background-color: var(--cor-de-fundo-cabecalho);
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(5px) saturate(95%);
+    }
+    
+    .cabecalho__logo {
+        display: block;
+        width: 70px;
+        margin: 1rem .5rem .5rem 1rem;
+        margin-left: 15vw;
+    }
+
+    .cabecalho__botao-menu {
+        display: none;
+    }
+
+    .menu__lista {
+        position: relative;
+        width: auto;
+        height: auto;
+        top: unset;
+        flex-direction: row;
+        background-color: transparent;
+        margin-right: 15vw;
+        backdrop-filter: none;
+    }
+
+    .menu-mobile__logo {
+        display: none;
+    }
+
+    .menu__item {
+        width: auto;
+        text-transform: none;
+        letter-spacing: 0.1rem;
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+
+    /* INICIO 768px - 1024px */
+
+    .inicio {
+        padding-top: 20px;
+    }
+
+    .inicio__caixa-textos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inicio__fig {
+        height: 300px;
+        width: 500px;
+    }
+
+    .inicio__texto {
+        font-size: 1.3rem;
+    }
+
+    .inicio__texto2 {
+        font-size: 1.3rem;
+    }
+
+    /* PROJETOS 768px - 1024px */
+
+    .projetos {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .projetos__titulo {
+        grid-column: span 3;
+    }
+
+    .projetos__caixa {
+        width: 20vw;
+        height: 30vw;
+        justify-self: center;
+    }
+
+    .projetos__caixa-botao, .projetos__caixa-botao-ativo {
+        grid-column: span 3;
+    }
+
+    /* HABILIDADES 768px - 1024px */
+
+    .habilidades__caixa {
+        grid-template-columns: auto 1fr;
+    }
+    
+    .habilidades__caixa-icones {
+        flex-direction: column;
+    }
+
+    .habilidades__caixa-exibicao {
+        padding-top: 20%;
+        padding-left: 2rem;
+        justify-content: space-evenly;
+    }
+
+    .caixa-exibicao__descricao {
+        align-items: flex-start;
+    }
+
+    .exibicao__descricao {
+        font-size: 1.3rem;
+    }
+
+    /* RODAPE 768px - 1024px */
+
+    .rodape {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 1rem 15vw;
+    }
+
+    .rodape__caixa-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .rodape__logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .rodape__profissional {
+        order: 2;
+        align-items: flex-end;
+    }
+
+    .profissional__item {
+        margin: .5rem 0 .5rem 1rem;
+    }
+
+    .rodape__contato {
+        order: 1;
+        align-items: center;
+    }
+
+    .contato__titulo {
+        text-align: center;
+    }
+
+    .contato__item {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+        margin: .5rem;
+    }
+
+    .rodape__autor {
+        order: 3;
+        font-size: 0.8rem;
+    }
+    
+}
+
+/* 1024px + */
+
+@media screen and (min-width:1024px) {
+
+    /* CABEÇALHO 1024px + */
+
+    .menu__item {
+        font-size: 1.1rem;
+        transition: 500ms;
+    }
+
+    /* INICIO 1024px + */
+
+    
+    .inicio {
+        flex-direction: row;
+        height: 400px;
+        height: 500px;
+    }
+
+    .inicio__fig {
+        order: 1;
+    }
+
+    .inicio__texto {
+        font-size: 1.2rem;
+        width: auto;
+    }
+
+    
+
+
+    /* PROJETOS 1024px + */
+
+    .projetos__caixa-texto {
+        opacity: 0;
+        transition: 500ms linear;
+    }
+    .projetos__caixa {
+        transition: 500ms linear;
+    }
+
+    .projetos__caixa-botao {
+        background: var(--cor-de-fundo-botao);
+        border: 2px solid var(--contorno-botao);
+    }
+
+    .projetos__caixa-botao-ativo {
+        background: var(--cor-de-fundo-botao-ativo);
+    }
+
+    /* HABILIDADES 1024px + */
+
+    .habilidades__caixa-exibicao {
+        padding-top: 20%;
+        padding-left: 5rem;
+    }
+
+    .exibicao__descricao {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    /* RODAPE 1024px + */
+}

@@ -1,0 +1,24 @@
+@import url(css/cabecalho.css);
+@import url(css/main.css);
+@import url(css/rodape.css);
+@import url(css/responsivo.css);
+@import url(css/animacoes.css);
+
+
+:root {
+    --cor-de-fundo: linear-gradient(60deg , #3d445a 0% 15%, #9e9e9e 50%, #3d445a 85% 100%);
+    --cor-de-fundo-cabecalho: #0000003a; 
+    --cor-fonte-primaria: #FFF;
+    --cor-fonte-secundaria: #121212;
+    --fonte-primaria: 'Roboto Mono', monospace;;
+    --fonte-secundaria: 'Press Start 2P', cursive;
+    --contorno-botao: rgb(255, 255, 255, 0.2);
+    --cor-de-fundo-botao: linear-gradient(60deg, transparent 0% 15%,#BBB 30%, transparent 45% 100%);
+    --cor-de-fundo-botao-ativo: linear-gradient(60deg, #CCC 0% 15%,transparent 30%, #CCC 45% 100%);
+}
+
+body {
+    background: var(--cor-de-fundo);
+    font-family: var(--fonte-primaria);
+    color: var(--cor-fonte-primaria);
+}

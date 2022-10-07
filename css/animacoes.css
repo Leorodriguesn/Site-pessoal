@@ -1,0 +1,269 @@
+/* ANIMAÇÃO CABEÇALHO */
+
+@keyframes apareceCabecalho {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.cabecalho {
+    animation: apareceCabecalho 1s ease-in-out;
+}
+
+/* ANIMAÇÃO MONTAGEM DA IMAGEM NA SEÇÃO INICIO */
+
+@keyframes montaImg1 {
+    0% {
+        transform: translate(-60%, -50%);
+        opacity: 0;
+    }
+    30% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+    60% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+@keyframes montaImg2 {
+    0% {
+        transform: translate(-60%, -50%);
+        opacity: 0;
+    }
+    30% {
+        transform: translate(-60%, -50%);
+        opacity: 0;
+    }
+    60% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+.inicio__img2 {
+    animation: montaImg1 7s ease-in-out infinite;
+}
+.inicio__img3 {
+    animation: montaImg2 7s ease-in-out infinite;
+}
+
+@keyframes pisca {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.inicio__texto::after {
+    animation: pisca .7s ease-in-out infinite;
+    font-size: 1.4rem;
+}
+.inicio__texto2::after {
+    animation: pisca .7s ease-in-out infinite;
+    font-size: 1.4rem;
+}
+
+
+/* ANIMAÇÃO MONTAGEM DO BOTAO LINKEDIN NA SEÇÃO INICIO */
+
+@keyframes botaoLinkedin {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        font-size: 1.3rem;
+        text-decoration: none;
+        color: var(--cor-fonte-primaria);
+        font-family: var(--fonte-primaria);
+        background-color: none;
+        font-weight: 700;
+    }
+    50% {
+        padding: 1.3rem 3.5rem;
+        margin: 2rem 0;
+        background-color: transparent;
+    }
+    80% {
+        border: 2px solid #FFF;
+        border-radius: 50px;
+    }
+    100% {
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: 700;
+        padding: 1.3rem 3.5rem;
+        margin: 2rem 0;
+        border-radius: 50px;
+        color: var(--cor-fonte-primaria);
+        font-family: var(--fonte-primaria);
+        background: transparent;
+        border: 2px solid #FFF;
+        opacity: 1;
+    }
+}
+
+.link-linkedin {
+    opacity: 0;
+    animation: botaoLinkedin 10s ease-in-out forwards;
+    animation-play-state: paused;
+}
+
+/* ANIMAÇÃO DE DIGITAÇÃO PROJETOS */
+
+@keyframes digitacaoEfeito {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.digitacao {
+    animation: digitacaoEfeito 700ms ease-in-out infinite;
+}
+
+@media screen and (min-width:1024px) {
+    
+    /* ANIMAÇÃO HOVER MENU */
+
+    .menu__item:hover {
+        scale: 1.1;
+        color: rgb(198, 248, 255);
+    }
+
+    /* ANIMAÇÃO MONTAGEM DO BOTAO LINKEDIN NA SEÇÃO INICIO */
+
+    @keyframes botaoLinkedinDesktop {
+        0% {
+            opacity: 0;
+        }
+        10% {
+            opacity: 1;
+        }
+        20% {
+            font-size: 1.3rem;
+            text-decoration: none;
+            color: var(--cor-fonte-primaria);
+            font-family: var(--fonte-primaria);
+            background-color: none;
+            font-weight: 700;
+        }
+        50% {
+            padding: 1.3rem 3.5rem;
+            margin: 2rem 0;
+        }
+        80% {
+            border: 2px solid var(--contorno-botao);
+            border-radius: 50px;
+            background: transparent;
+        }
+        100% {
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 700;
+            padding: 1.3rem 3.5rem;
+            margin: 2rem 0;
+            border-radius: 50px;
+            color: var(--cor-fonte-primaria);
+            font-family: var(--fonte-primaria);
+            background: transparent;
+            border: 2px solid var(--contorno-botao);
+            opacity: 1;
+        }
+    }
+
+    .link-linkedin {
+        opacity: 0;
+        animation: botaoLinkedinDesktop 10s ease-in-out forwards;
+        animation-play-state: paused;
+    }
+
+    .link-linkedin:hover {
+        scale: 1.05;
+    }
+    
+    
+    /* ANIMAÇÃO HOVER PROJETOS */
+
+    .projetos__caixa:hover {
+        scale: 1.1;
+        transform: translateY(-20px);
+        box-shadow: 10px 20px 20px #000;
+        cursor: pointer;
+    }
+    .projetos__caixa:hover .projetos__caixa-texto {
+        opacity: 1;
+        letter-spacing: 0.4rem;
+    }
+
+    .projetos__caixa-botao:hover {
+        scale: 1.05;
+        background-position-x: 100px;
+    }
+    .projetos__caixa-botao-ativo:hover {
+        scale: 1.05;
+        background-position-x: 100px;
+    }
+
+    /* ANIMAÇÃO HOVER HABILIDADES */
+
+    .caixa-icone:hover {
+        scale: 1.05;
+        cursor: pointer;
+        transform: translateY(-5px);
+        box-shadow: 8px 10px 10px #000;
+    }   
+
+    .caixa-icone:hover .habilidades__icone path {
+        fill: rgb(0, 0, 0);
+    }
+
+    /* ANIMAÇÃO HOVER RODAPE */
+
+    .contato__item:hover {
+        scale: 1.1;
+        box-shadow: 0 -5px 10px #000;
+        transform: translate(5px, 5px);
+    }
+
+    .profissional__item:hover {
+        transform: rotate(360deg);
+    }
+
+    .profissional__item:nth-of-type(1):hover {
+        background-color: black;
+    }
+
+    .profissional__item:nth-of-type(1):hover .github {
+        color: #AAA;
+    }
+
+    .profissional__item:nth-of-type(2):hover {
+        background-color: rgba(40, 40, 155, 0.4);
+    }
+
+    .profissional__item:nth-of-type(2):hover .linkedin {
+        color: #AAA;
+    }
+}

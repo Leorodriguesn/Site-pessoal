@@ -4,9 +4,173 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    
     <title>Desenvolvedor Web - Leonardo Rodrigues</title>
 </head>
+
 <body>
-    
+    <header class="cabecalho">
+        <img src="imagens/Logo.png" alt="Logotipo do Desenvolvedor" class="cabecalho__logo">
+        <button class="cabecalho__botao-menu"><i class="fa-solid fa-bars"></i></button>
+        <ul class="menu__lista">
+            <img src="imagens/Logo.png" alt="Logo do Desenvolvedor" class="menu-mobile__logo">
+            <li class="menu__item"><a href="#" id="menu__inicio" class="menu__item-link">Início</a></li>
+            <li class="menu__item"><a href="#" id="menu__projetos" class="menu__item-link">Projetos</a></li>
+            <li class="menu__item"><a href="#" id="menu__habilidades" class="menu__item-link">Habilidades</a></li>
+
+        </ul>
+    </header>
+
+    <main>
+        <div class="inicio" id="inicio__ancora">
+            <div class="inicio__fig">
+                <img src="imagens/code1.svg" alt="Imagem representativa de Web Desing" class="inicio__img">
+                <img src="imagens/code2.svg" alt="Imagem representativa de Web Desing" class="inicio__img inicio__img2">
+                <img src="imagens/code3.svg" alt="Imagem representativa de Web Desing" class="inicio__img inicio__img3">
+            </div>
+            <div class="inicio__caixa-textos">
+                <p class="inicio__texto">Meu nome é Leonardo Rodrigues, sou um desenvolvedor Front-End.</p>
+                <p class="inicio__texto2">Para saber mais sobre mim, acesse:</p>
+                <a href="https://www.linkedin.com/in/leonardo-jos%C3%A9-rodrigues-neiva-327aa2252/" class="link-linkedin">Linkedin</a>
+            </div>
+        </div>
+
+        <div class="projetos" id="projetos__ancora">
+            <h2 class="projetos__titulo">Projetos</h2>
+            <div class="projetos__caixa">
+                <p class="projetos__caixa-texto">Em Breve<span class="digitacao">|</span></p>
+            </div>
+            <div class="projetos__caixa">
+                <p class="projetos__caixa-texto">Em Breve<span class="digitacao">|</span></p>
+            </div>
+            <div class="projetos__caixa">
+                <p class="projetos__caixa-texto">Em Breve<span class="digitacao">|</span></p>
+            </div>
+            <div class=" projetos__vermais">
+                <p class="projetos__caixa-texto">Em Breve<span class="digitacao">|</span></p>
+            </div>
+            <div class=" projetos__vermais">
+                <p class="projetos__caixa-texto">Em Breve<span class="digitacao">|</span></p>
+            </div>
+            <div class=" projetos__vermais">
+                <p class="projetos__caixa-texto">Em Breve<span class="digitacao">|</span></p>
+            </div>
+            <div class="projetos__caixa-botao"><button class="projetos__botao-vermais">Ver mais</button></div>
+        </div>
+
+        <div class="habilidades" id="habilidades__ancora">
+            <h2 class="habilidades__titulo">Habilidades</h2>
+            <div class="habilidades__caixa">
+                <div class="habilidades__caixa-icones">
+                    <div class="caixa-icone">
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                        width="80.000000pt" height="99.000000pt" viewBox="0 0 80.000000 99.000000"
+                        preserveAspectRatio="xMidYMid meet" class="habilidades__icone" aria-label="Icone HTML5">
+
+                        <g transform="translate(0.000000,99.000000) scale(0.100000,-0.100000)"
+                        fill="#111" stroke="none">
+                        <path d="M0 931 c0 -11 16 -191 35 -401 19 -210 35 -385 35 -390 0 -10 17 -15
+                        198 -65 l134 -37 151 42 c84 23 157 43 164 45 7 2 15 14 17 27 7 34 66 716 66
+                        761 l0 37 -400 0 c-389 0 -400 -1 -400 -19z m648 -194 l-3 -52 -194 -3 -193
+                        -2 6 -31 c3 -18 6 -40 6 -50 0 -18 11 -19 185 -19 l185 0 -5 -37 c-3 -21 -10
+                        -90 -15 -153 -6 -63 -12 -116 -14 -117 -1 -2 -47 -16 -102 -31 l-100 -28 -103
+                        28 c-57 15 -105 28 -106 30 -1 2 -5 38 -9 81 l-7 77 50 0 51 0 6 -40 c6 -38 9
+                        -40 62 -55 51 -15 59 -15 111 2 l56 18 5 63 5 62 -176 0 -176 0 -7 96 c-4 53
+                        -9 123 -13 155 l-6 59 252 0 252 0 -3 -53z"/>
+                        </g>
+                        </svg>
+                    </div>
+                    <div class="caixa-icone">
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                        width="80.000000pt" height="98.000000pt" viewBox="0 0 80.000000 98.000000"
+                        preserveAspectRatio="xMidYMid meet" class="habilidades__icone" aria-label="Icone CSS3">
+
+                        <g transform="translate(0.000000,98.000000) scale(0.100000,-0.100000)"
+                        fill="#111" stroke="none">
+                        <path d="M0 920 c0 -59 71 -795 77 -801 5 -4 79 -27 165 -52 l158 -44 162 45
+                        c90 25 165 46 167 48 5 4 71 728 71 782 l0 42 -400 0 c-392 0 -400 0 -400 -20z
+                        m645 -242 c-14 -201 -36 -413 -43 -420 -4 -3 -51 -18 -105 -33 l-97 -26 -98
+                        27 c-53 15 -101 30 -105 34 -5 4 -12 42 -16 84 l-7 76 53 0 c51 0 53 -1 53
+                        -28 0 -40 18 -58 73 -71 54 -13 133 1 155 27 6 9 12 40 12 69 l0 53 -175 0
+                        -175 0 0 50 0 50 179 0 c197 0 191 -2 191 66 l0 34 -189 0 -188 0 -7 31 c-15
+                        75 -35 69 245 69 l251 0 -7 -92z"/>
+                        </g>
+                        </svg>
+                    </div>
+                    <div class="caixa-icone">
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                        width="80.000000pt" height="98.000000pt" viewBox="0 0 80.000000 98.000000"
+                        preserveAspectRatio="xMidYMid meet" class="habilidades__icone" aria-label="Icone JavaScript">
+
+                        <g transform="translate(0.000000,98.000000) scale(0.100000,-0.100000)"
+                        fill="#111" stroke="none">
+                        <path d="M0 933 c0 -43 74 -810 79 -814 14 -14 317 -90 340 -86 49 8 296 79
+                        304 86 7 7 77 717 77 789 l0 32 -400 0 c-220 0 -400 -3 -400 -7z m650 -180 c0
+                        -49 -43 -489 -49 -495 -3 -3 -50 -18 -104 -32 l-98 -27 -97 27 c-53 15 -100
+                        30 -103 33 -4 3 -9 41 -13 84 l-6 77 49 0 49 0 6 -43 c7 -44 7 -44 61 -56 43
+                        -10 67 -10 110 0 53 12 54 13 59 53 8 56 26 255 26 278 0 16 -15 18 -192 20
+                        l-193 3 -3 48 -3 47 250 0 c232 0 251 -1 251 -17z"/>
+                        </g>
+                        </svg>                        
+                    </div>
+                </div>
+                <div class="habilidades__caixa-exibicao">
+                    <div class="caixa-exibicao__titulo">
+                        <h2 class="instrucao">Clique no item para ver sua descrição.</h2>
+                        <h2 class="exibicao__titulo">HTML5</p>
+                        <h2 class="exibicao__titulo">CSS3</p>
+                        <h2 class="exibicao__titulo">JavaScript</p>
+                    </div>
+                    <div class="caixa-exibicao__img">
+                        <img src="imagens/html.png" alt="Logo HTML5" class="exibicao__img">
+                        <img src="imagens/css.png" alt="Logo CSS3" class="exibicao__img">
+                        <img src="imagens/js.png" alt="Logo JavaScript" class="exibicao__img">
+                    </div>
+                    <div class="caixa-exibicao__descricao">
+                        <p class="exibicao__descricao">Sigla para HyperText Markup Language, atualmente na versão HTML5, é uma linguagem que compõe a maior parte das páginas da internet e dos aplicativos online. Ele permite a construção de websites e a inserção de novos conteúdos, como textos, imagens e vídeos.</p>
+                        <p class="exibicao__descricao">Cascading Style Sheets (CSS) é um mecanismo para adicionar estilo a um documento web. Atualmente na versão CSS3, sendo utilizada utilizada para otimizar o conteúdo das páginas e possibilitar uma apresentação mais amigável para o usuário.</p>
+                        <p class="exibicao__descricao">Ao lado de HTML e CSS, é uma das três principais tecnologias da World Wide Web. <br> Javascript, ou simplesmente JS, é uma linguagem de programação de uso geral, aplicada principalmente para desenvolvimento web e desenvolvimento de software. Utilizado em programação Front-End, permite implementar efeitos dinâmicos complexos em páginas web.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape__profissional">
+            <h2 class="profissional__titulo">Profissional</h2>
+            <ul class="profissional__lista">
+                <li class="profissional__item"><a href="https://github.com/Leorodriguesn" class="profissional__link github"><i class="fa-brands fa-github"></i></a></li>
+                <li class="profissional__item"><a href="https://www.linkedin.com/in/leonardo-jos%C3%A9-rodrigues-neiva-327aa2252/" class="profissional__link linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+        
+        <div class="rodape__caixa-logo">
+            <img src="imagens/Logo.png" alt="Logo do Desenvolvedor" class="rodape__logo">
+        </div>
+        <div class="rodape__contato">
+            <h2 class="contato__titulo">Contato</h2>
+            <ul class="contato__lista">
+                <li class="contato__item email"><a href="mailto:leojrn@gmail.com" target="_top" class="contato__link"><i class="fa-regular fa-envelope"></i></a></li>
+                <li class="contato__item whatsapp"><a href="https://wa.me/5537999449186" class="contato__link"><i class="fa-brands fa-whatsapp"></i></a></li>
+            </ul>
+        </div>
+        <p class="rodape__autor">Feito por Leonardo Rodrigues</p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/exibeHab.js"></script>
+    <script src="js/digitação.js"></script>
+    <script src="js/menuLink.js"></script>
 </body>
-</html>

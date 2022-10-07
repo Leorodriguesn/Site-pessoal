@@ -1,0 +1,106 @@
+.rodape {
+    background-color: var(--cor-de-fundo-cabecalho);
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    padding: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.rodape__contato {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.rodape__profissional {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contato__titulo, .profissional__titulo {
+    padding-bottom: .5rem;
+    letter-spacing: 0.15rem;
+    font-weight: 300;
+}
+
+.contato__lista, .profissional__lista {
+    display: flex;
+    padding-bottom: 1.5rem;
+}
+
+.contato__item {
+    margin: .5rem 0 .5rem 1rem;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    contain: content;
+    background-color: #aaa;
+    border-radius: 50%;
+    box-shadow: 6px 6px 6px #000;
+    transition: 500ms;
+}
+
+.email {
+    background-color: #4343a7;
+}
+
+.whatsapp {
+    background-color: #3b7548;
+}
+
+.instagram {
+    background-color: #422357;
+}
+
+.contato__link {
+    color: #DDD;
+}
+
+.rodape__caixa-logo {
+    width: 20vw;
+    height: 20vw;
+    contain: content;
+    grid-row: span 2;
+}
+
+.rodape__logo {
+    width: 20vw;
+    height: 20vw;
+    opacity: 0.1;
+}
+
+.profissional__item {
+    margin: .5rem 1rem .5rem 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    contain: content;
+    background-color: #aaa;
+    border-radius: 30%;
+    transition: 1s;
+}
+
+.github {
+    color: black;
+    font-size: 1.8rem;
+    transition: 1s;
+}
+
+.linkedin {
+    color: rgb(40, 40, 155);
+    font-size: 1.5rem;
+}
+
+.rodape__autor {
+    padding-top: .5rem;
+    grid-column: span 3;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+}
