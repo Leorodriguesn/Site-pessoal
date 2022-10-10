@@ -6,6 +6,11 @@ const botaoVerMaisAux = document.querySelector('.projetos__botao-vermais')
 const projetosVerMais = document.querySelectorAll('.projetos__vermais');
 const projetosTitulo = document.querySelector('.projetos__titulo');
 
+const botaoVerTodos = document.querySelector('.cursos__caixa-botao')
+const botaoVerTodosAux = document.querySelector('.cursos__botao-vermais')
+const cursosVerMais = document.querySelectorAll('.cursos__vermais');
+const cursosTitulo = document.querySelector('.cursos__titulo');
+
 /* FUNCIONAMENTO DOS BOTÕES */
 
 botaoMenu.addEventListener("click", () => {
@@ -28,7 +33,23 @@ botaoVerMais.addEventListener("click", () => {
     }
 });
 
-/* RETORNA O VER MAIS DOS PROJETOS */
+botaoVerTodos.addEventListener("click", () => {
+    cursosVerMais.forEach(element => {
+        element.classList.toggle('cursos__item');
+        element.classList.toggle('cursos__vermais');
+    });
+    botaoVerTodos.classList.toggle('cursos__caixa-botao-ativo')
+    botaoVerMais.classList.toggle('cursos__caixa-botao')
+    if (botaoVerTodosAux.innerHTML == 'Ver todos') {
+        botaoVerTodosAux.innerHTML = 'Ver menos';
+        botaoVerTodosAux.style.color = '#3d445a';
+    } else {
+        botaoVerTodosAux.innerHTML = 'Ver todos';
+        botaoVerTodosAux.style.color = '#FFF';
+    }
+});
+
+/* RETORNA O VER MAIS DOS CURSOS E PROJETOS */
 
 function escondeProjetosMais () {
     if ((botaoVerMais.getBoundingClientRect().top < 0 && botaoVerMaisAux.innerHTML == 'Ver menos') || (projetosTitulo.getBoundingClientRect().bottom > window.innerHeight && botaoVerMaisAux.innerHTML == 'Ver menos')) {
@@ -43,4 +64,18 @@ function escondeProjetosMais () {
     }
 }
 
+function escondeCursosMais () {
+    if ((botaoVerTodos.getBoundingClientRect().top < 0 && botaoVerTodosAux.innerHTML == 'Ver menos') || (cursosTitulo.getBoundingClientRect().bottom > window.innerHeight && botaoVerTodosAux.innerHTML == 'Ver menos')) {
+        cursosVerMais.forEach(element => {
+            element.classList.remove('cursos__item');
+            element.classList.add('cursos__vermais');
+        });
+        botaoVerTodos.classList.remove('cursos__caixa-botao-ativo')
+        botaoVerTodos.classList.add('cursos__caixa-botao')
+        botaoVerTodosAux.innerHTML = 'Ver todos';
+        botaoVerTodosAux.style.color = '#FFF';
+    }
+}
+
 window.addEventListener("scroll", escondeProjetosMais);
+window.addEventListener("scroll", escondeCursosMais);

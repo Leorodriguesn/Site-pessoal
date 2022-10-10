@@ -56,6 +56,94 @@ main {
     flex-grow: 0;
 }
 
+/* SEÇÃO CURSOS */
+
+.cursos {
+    padding: 3rem 0;
+    border-bottom: 2px solid rgb(255, 255, 255, 0.2);
+}
+
+.cursos__titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.cursos__lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+.cursos__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    padding: 1rem;
+    text-align: center;
+    width: 22vw;
+    height: 40vw;
+    background-color: rgba(136, 136, 136, 0.301);
+    border: 1px solid rgba(0, 0, 0, 0.201);
+    border-radius: 20px;
+    box-shadow: 6px 6px 6px #000;
+}
+
+.cursos__texto {
+    flex-grow: 1;
+}
+
+.cursos__img {
+    width: 2rem;
+    padding: 1rem;
+}
+
+.cursos__caixa-botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto 0 auto;
+    height: 60px;
+    width: 200px;
+    border: 2px solid #FFF;
+    border-radius: 50px;
+    transition: 500ms linear;
+}
+
+.cursos__botao-vermais {
+    height: 60px;
+    width: 200px;
+    border: none;
+    background-color: transparent ;
+    border-radius: 50px;
+    transition: 500ms linear;
+    font-family: var(--fonte-primaria);
+    color: #FFF;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.cursos__caixa-botao-ativo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255, 0.7);
+    border: 2px solid var(--contorno-botao);
+    height: 60px;
+    width: 200px;
+    border-radius: 50px;
+    transition: 500ms linear;
+}
+
+.cursos__vermais {
+    display: none;
+}
+
 /* SEÇÃO PROJETOS */
 
 .projetos {

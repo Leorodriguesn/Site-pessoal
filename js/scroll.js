@@ -4,6 +4,8 @@ sr.reveal('.inicio__fig', {duration : 3000, origin: 'right'});
 sr.reveal('.inicio__texto', {duration : 3000, origin: 'left'});
 sr.reveal('.inicio__texto2', {duration : 3000, origin: 'left'});
 sr.reveal('.link-linkedin', {duration : 3000, origin: 'left'});
+sr.reveal('.cursos__titulo', {duration : 3000, origin: 'right'});
+sr.reveal('.cursos__item', {duration : 5000, origin: 'left'});
 sr.reveal('.projetos__titulo', {duration : 3000, origin: 'right'});
 sr.reveal('.projetos__caixa', {duration : 5000, origin: 'left'});
 sr.reveal('.projetos__botao-vermais', {duration : 3000, origin: 'right'});

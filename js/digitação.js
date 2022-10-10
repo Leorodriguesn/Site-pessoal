@@ -26,5 +26,17 @@ function typeWriter(elemento, elemento2) {
     }, txtArray.length * 75 + 1000 + 75 * txtArray2.length)
 }
 
-typeWriter(texto, texto2);
+function typeWriter2(elemento) {
+    const txtArray = elemento.innerHTML.split('');
+    elemento.innerHTML = '';
+    var afterTexto = document.createElement("style");
+    afterTexto.innerHTML = ".inicio__texto::after { content: '|';} ";
+    document.head.appendChild(afterTexto);
+    txtArray.forEach((letra, i) => {
+        setTimeout(() => {
+            elemento.innerHTML += letra;
+        }, 1000 + 75 * i);
+    });
+}
 
+typeWriter(texto, texto2);

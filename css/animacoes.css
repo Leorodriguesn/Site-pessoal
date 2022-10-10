@@ -203,6 +203,21 @@
         scale: 1.05;
     }
     
+    /* ANIMAÇÃO HOVER CURSOS */
+
+    .cursos__caixa-botao:hover {
+        scale: 1.05;
+        background-position-x: 100px;
+    }
+    .cursos__caixa-botao-ativo:hover {
+        scale: 1.05;
+        background-position-x: 100px;
+    }
+
+    .cursos__item:hover > .cursos__img {
+        transform: scale(1.5);
+    }
+
     
     /* ANIMAÇÃO HOVER PROJETOS */
 

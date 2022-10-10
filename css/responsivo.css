@@ -72,6 +72,23 @@
 
     /* PROJETOS 768px - 1024px */
 
+    .cursos__lista {
+        grid-template-columns: 1fr;
+    }
+
+    .cursos__item {
+        flex-direction: row;
+        font-size: 1rem;
+        line-height: 1.1rem;
+        padding: 1rem 2rem;
+        width: 100%;
+        height: 60px;
+    }
+    
+    
+
+    /* PROJETOS 768px - 1024px */
+
     .projetos {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -192,8 +209,16 @@
         width: auto;
     }
 
-    
+    /* CURSOS 1024px + */
 
+    .cursos__caixa-botao {
+        background: var(--cor-de-fundo-botao);
+        border: 2px solid var(--contorno-botao);
+    }
+
+    .cursos__caixa-botao-ativo {
+        background: var(--cor-de-fundo-botao-ativo);
+    }
 
     /* PROJETOS 1024px + */
 
