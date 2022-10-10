@@ -214,6 +214,10 @@
         background-position-x: 100px;
     }
 
+    .cursos__img {
+        transition: 500ms;
+    }
+
     .cursos__item:hover > .cursos__img {
         transform: scale(1.5);
     }
