@@ -255,12 +255,13 @@ main {
     display: grid;
     gap: 3rem;
     min-height: 70vh;
+    justify-items: center;
 }
 
 .habilidades__caixa-icones {
-     display: flex;
-     justify-content: space-evenly;
-     flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 24px;
 }
 
 .caixa-icone {
@@ -353,5 +354,6 @@ main {
     opacity: 0;
     transition: 1s;
     font-size: 1rem;
-    text-align: center;
+    line-height: 1.5rem;
+    text-align: justify;
 }
