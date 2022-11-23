@@ -177,6 +177,11 @@ main {
     margin: 1rem 0;
 }
 
+.projeto_01 {
+    background: url(../imagens/Projeto_IGCT.PNG);
+    
+}
+
 .projetos__caixa-texto {
     background: linear-gradient(to right, #F15152, #4F000B);
     width: 100%;
@@ -189,6 +194,7 @@ main {
     font-size: 0.7rem;
     letter-spacing: .2rem;
     transform: rotate(-15deg) scaleX(1.2);
+    backdrop-filter: blur(5px) saturate(95%);
 }
 
 .projetos__botao-vermais {
