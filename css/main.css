@@ -178,8 +178,9 @@ main {
 }
 
 .projeto_01 {
-    background: url(../imagens/Projeto_IGCT.PNG);
-    
+    background: url();
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .projetos__caixa-texto {
