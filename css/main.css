@@ -200,18 +200,14 @@ main {
 
 .projetos__caixa-texto-aguardando-publicacao {
     text-align: center;
-    background: linear-gradient(to right, #F15152, #4F000B);
-    width: 110%;
-    height: 40%;
+    color: white;
     display: flex;
+    font-weight: 700;
     align-items: center;
-    justify-content: center;
     text-transform: uppercase;
-    font-family: var(--fonte-secundaria);
-    font-size: 0.6rem;
-    letter-spacing: .1rem;
+    font-size: 1rem;
+    letter-spacing: .05rem;
     line-height: 1.5rem;
-    transform: rotate(-15deg) scaleX(1.2);
 }
 
 .projetos__botao-vermais {
